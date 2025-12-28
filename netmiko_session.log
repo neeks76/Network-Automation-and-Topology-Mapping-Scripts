@@ -1,0 +1,125 @@
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+R1#
+R1#terminal width 511
+R1#terminal length 0
+R1#
+R1#
+R1#
+R1#show cdp neighbors detail
+-------------------------
+Device ID: N1(9L2BBUSB9ML)
+Entry address(es): 
+  IP address: 192.168.55.86
+Platform: N9K-C9500v,  Capabilities: Router Switch CVTA phone port 
+Interface: GigabitEthernet0/0,  Port ID (outgoing port): Ethernet1/9
+Holdtime : 172 sec
+
+Version :
+Cisco Nexus Operating System (NX-OS) Software, Version 10.1(1)
+
+advertisement version: 2
+Duplex: full
+
+-------------------------
+Device ID: N1(9L2BBUSB9ML)
+Entry address(es): 
+  IP address: 192.168.55.86
+Platform: N9K-C9500v,  Capabilities: Router Switch CVTA phone port 
+Interface: GigabitEthernet0/3,  Port ID (outgoing port): Ethernet1/1
+Holdtime : 138 sec
+
+Version :
+Cisco Nexus Operating System (NX-OS) Software, Version 10.1(1)
+
+advertisement version: 2
+Duplex: full
+
+
+Total cdp entries displayed : 2
+R1#
+R1#show version
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.9(3)M6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.********.com/techsupport
+Copyright (c) 1986-2022 by Cisco Systems, Inc.
+Compiled Mon 08-Aug-22 15:22 by mcpre
+
+
+ROM: Bootstrap program is IOSv
+
+R1 uptime is 3 hours, 5 minutes
+System returned to ROM by reload
+System image file is "flash0:/vios-adventerprisek9-m"
+Last reload reason: Unknown reason
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.********.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@********.com.
+
+Cisco IOSv (revision 1.0) with  with 460009K/62464K bytes of memory.
+Processor board ID 9S02IOPHL15YCNV2APRJP
+4 Gigabit Ethernet interfaces
+DRAM configuration is 72 bits wide with parity disabled.
+256K bytes of non-volatile configuration memory.
+2097152K bytes of ATA System CompactFlash 0 (Read/Write)
+0K bytes of ATA CompactFlash 1 (Read/Write)
+1024K bytes of ATA CompactFlash 2 (Read/Write)
+0K bytes of ATA CompactFlash 3 (Read/Write)
+
+
+
+Configuration register is 0x0
+
+R1#
+R1#show running-config interface Gi0/0 | include description
+ description Connected to N1(9L2BBUSB9ML) - Ethernet1/9
+R1#
+R1#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#
+R1(config)#interface Gi0/0
+R1(config-if)#description Connected to N1(9L2BBUSB9ML) - Ethernet1/9
+R1(config-if)#
+R1(config-if)#end
+R1#
+R1#
+R1#show running-config interface Gi0/3 | include description
+ description Connected to N1(9L2BBUSB9ML) - Ethernet1/1
+R1#
+R1#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#
+R1(config)#interface Gi0/3
+R1(config-if)#description Connected to N1(9L2BBUSB9ML) - Ethernet1/1
+R1(config-if)#
+R1(config-if)#end
+R1#
+R1#
+R1#
+R1#write mem
+Building configuration...
+
+  [OK]
+R1#
+R1#exit

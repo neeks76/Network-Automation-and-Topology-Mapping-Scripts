@@ -1,0 +1,7 @@
+#!/home/hooni/network-scripts-test/Network-Automation-and-Topology-Mapping-Scripts/.venv/bin/python3
+import sys
+from netmiko.cli_tools.netmiko_show import main_ep
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main_ep())

@@ -1,0 +1,13 @@
+
+    <mxfile>
+      <diagram>
+        <mxGraphModel>
+          <root>
+            <mxCell id="0"/>
+            <mxCell id="1" parent="0"/>
+            <mxCell id="971d7fd0-1509-49bc-8442-e5e679b149d0" value="N1" style="shape=ellipse;" vertex="1" parent="1"><mxGeometry x="100" y="100" width="80" height="80" as="geometry"/></mxCell><mxCell id="85a826c4-a0c0-4fff-820c-2cc013fa002c" value="R1" style="shape=ellipse;" vertex="1" parent="1"><mxGeometry x="220" y="100" width="80" height="80" as="geometry"/></mxCell><mxCell id="b9a893dd-f66a-4673-a43b-9cce3e149b00" value="2" style="edgeStyle=orthogonalEdgeStyle;verticalLabelPosition=top;align=center;labelBackgroundColor=none" edge="1" source="971d7fd0-1509-49bc-8442-e5e679b149d0" target="85a826c4-a0c0-4fff-820c-2cc013fa002c" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="65d5178f-0bef-4b30-aa88-a42ecc4688a7" value="Ethernet1/1, Ethernet1/9" style="text;html=1;align=left;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="0" y="0" width="120" height="20" as="geometry"/></mxCell><mxCell id="b6dc3468-8f36-4a8c-bde9-66aa2c7de2ea" value="" style="edgeStyle=none;strokeColor=none;" edge="1" source="971d7fd0-1509-49bc-8442-e5e679b149d0" target="65d5178f-0bef-4b30-aa88-a42ecc4688a7" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="c1b209f8-df51-4766-955d-882cb1e3682c" value="Gi0/0, Gi0/3" style="text;html=1;align=right;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="0" y="0" width="120" height="20" as="geometry"/></mxCell><mxCell id="b03f8aea-d3a0-47e2-8347-5bc799947dca" value="" style="edgeStyle=none;strokeColor=none;" edge="1" source="85a826c4-a0c0-4fff-820c-2cc013fa002c" target="c1b209f8-df51-4766-955d-882cb1e3682c" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+          </root>
+        </mxGraphModel>
+      </diagram>
+    </mxfile>
+    
